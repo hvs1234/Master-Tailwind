@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style>
+    body::before{background:url('bg3.jpg') no-repeat center center/cover;position:fixed;width:110%;height:105%;z-index:-1;top:-10px;left:-10px;content:"";filter:blur(10px);}
+</style>
+
+<body>
+    <nav class="navbar">
+        <ul class="flex bg-black text-white px-[40px] py-[30px]">
+            <li class="font-sans text-[1.2em] font-bold px-[40px] hover:text-[yellow] hover:cursor-pointer">Home</li>
+            <li class="font-sans text-[1.2em] font-bold px-[40px] hover:text-[yellow] hover:cursor-pointer">About Us</li>
+            <li class="font-sans text-[1.2em] font-bold px-[40px] hover:text-[yellow] hover:cursor-pointer">Services</li>
+            <li class="font-sans text-[1.2em] font-bold px-[40px] hover:text-[yellow] hover:cursor-pointer">Products</li>
+            <li class="font-sans text-[1.2em] font-bold px-[40px] hover:text-[yellow] hover:cursor-pointer relative left-[900px]">Contact Us</li>
+            <li class="font-sans text-[1.2em] font-bold px-[40px] hover:text-[yellow] hover:cursor-pointer relative left-[900px]">Cart</li>
+        </ul>
+    </nav>
+</body>
+</html>
