@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Directive</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+  
+<style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    .btn {
+        @apply {
+            relative left-[30px] top-[30px] bg-[lightblue] 
+            text-[2em] font-bold border-4 border-solid border-black rounded-full px-[50px] py-[20px] hover:bg-[lightgreen] hover:text-[darkblue]
+        }
+    }    
+</style>
+  
+<body>
+    <div class="container-1">
+        <button class="btn">Submit</button>
+    </div>
+</body>
+</html>
