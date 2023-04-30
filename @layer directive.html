@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer Directive</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    @layer components {
+        .btn {
+            @apply {
+                relative left-[30px] top-[30px] bg-[lightblue] 
+                text-[2em] font-bold border-4 border-solid border-black rounded-full px-[50px] py-[20px] hover:bg-[lightgreen] hover:text-[darkblue]
+             }
+        }
+    }      
+</style>
+<body>
+    <div class="container-1 border-2 border-solid border-black relative top-[20px] left-[100px] w-[50%] rounded-[20px] bg-[lightgreen] text-[#0000ff]">
+        <p class="mx-[20px] my-[20px] font-semibold text-[1.2em]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rem consectetur nobis optio possimus est, mollitia placeat numquam dolor officia unde odio, doloribus repellat labore sit adipisci assumenda corporis accusamus, voluptatem vel tempora sint maiores porro quis? Consequatur error amet, nulla ipsa voluptas laboriosam voluptate dolorum iste, doloremque aliquid reprehenderit alias, corrupti quisquam porro praesentium. Ea blanditiis, vel quo iusto ipsa sequi quos non ratione itaque, atque officiis quasi ex quis fugiat ipsum neque at vero voluptatibus autem, omnis incidunt natus! Ullam eveniet at illo sunt, necessitatibus animi magnam quam aspernatur corrupti, earum expedita non error quaerat ut excepturi quasi?</p>
+    </div>
+</body>
+</html>
